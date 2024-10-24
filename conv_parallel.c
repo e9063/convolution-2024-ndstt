@@ -22,6 +22,7 @@ int main(){
     int *res = malloc(sizeof(int) * Nres);
 
     // ---- Parallel Convolution ----
+    omp_set_num_threads(4);
     double start = omp_get_wtime();
     #pragma omp parallel for
     for (int i = 0; i < Nres; i++) {

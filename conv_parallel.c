@@ -22,6 +22,7 @@ int main(){
     int *res = malloc(sizeof(int) * Nres);
 
     // ---- Parallel Convolution ----
+    double start = omp_get_wtime();
     #pragma omp parallel for
     for (int i = 0; i < Nres; i++) {
         res[i] = 0;
@@ -29,13 +30,15 @@ int main(){
             res[i] += A[i + j] * F[j];
         }
     }
+    double end = omp_get_wtime();
 
-    // Print result
     // Print result
     printf("\nResult :\n");
     for (int i = 0; i < Nres; i++) {
         printf("%d\n", res[i]);
     }
+
+    printf("Parallel Convolution took %f seconds\n", end - start);
     // ---- end parallel convolution ----
 
     // ---- free memory ----

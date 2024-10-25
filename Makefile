@@ -16,4 +16,4 @@ benchmark: benchmark.c
 
 # Clean up compiled files
 clean:
-	rm -f conv_parallel conv_sequential
+	rm -f conv_parallel conv_sequential benchmark

@@ -1,0 +1,55 @@
+input_demo.txt
+NA = 8
+NF = 5
+Sequential Convolution took 0.000002 seconds
+Parallel Convolution took 0.000137 seconds
+Speedup: 0.014610
+
+input_easy1.txt
+NA = 30
+NF = 5
+Sequential Convolution took 0.000002 seconds
+Parallel Convolution took 0.000152 seconds
+Speedup: 0.013158
+
+input_easy2.txt
+NA = 100
+NF = 10
+Sequential Convolution took 0.000004 seconds
+Parallel Convolution took 0.000142 seconds
+Speedup: 0.028079
+
+input_medium1.txt
+NA = 10000
+NF = 9900
+Sequential Convolution took 0.002424 seconds
+Parallel Convolution took 0.001848 seconds
+Speedup: 1.311454
+
+input_medium2.txt
+NA = 10000
+NF = 9900
+Sequential Convolution took 0.002559 seconds
+Parallel Convolution took 0.001786 seconds
+Speedup: 1.433138
+
+input_test.txt
+NA = 100000
+NF = 50000
+Sequential Convolution took 5.902113 seconds
+Parallel Convolution took 2.807364 seconds
+Speedup: 2.102369
+
+input_big.txt
+NA = 500000
+NF = 490000
+Sequential Convolution took 11.546861 seconds
+Parallel Convolution took 5.539505 seconds
+Speedup: 2.084457
+
+input_million.txt
+NA = 2000000
+NF = 10000
+Sequential Convolution took 47.026228 seconds
+Parallel Convolution took 22.084860 seconds
+Speedup: 2.129342
